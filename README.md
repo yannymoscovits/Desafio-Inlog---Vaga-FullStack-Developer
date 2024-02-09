@@ -1,5 +1,8 @@
 # Desafio Inlog - Vaga FullStack Developer 🚀
 
+Objetivo Geral:
+
+O objetivo deste desafio é avaliar e demonstrar suas habilidades no desenvolvimento de back-end, seguido pela integração e desenvolvimento do front-end, utilizando as APIs que você criou na primeira etapa.
 
 # Back - End
 
