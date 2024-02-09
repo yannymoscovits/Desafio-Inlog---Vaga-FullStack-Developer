@@ -7,14 +7,33 @@ O objetivo deste desafio é avaliar e demonstrar suas habilidades no desenvolvim
 # Back - End
 
 ## Introdução 📜
+O objetivo é completar a aplicação WebApi presente na pasta back-end.
 
 ## Instruções 📝
+A solução esta em dotnet 6.0 e pode ser utilizado a IDE de sua preferência mas
+deve ser feito como o dotnet 6.0 ou superior.
+
+Dentro da Solução tem algumas sugestões de estrutura de projeto, para
+que possa colocar as classes e interfaces necessárias.
 
 ## Iniciando o Projeto 🚀
+Dentro da pasta Controllers tem uma controller de veículos 
+com dois métdos para servir de ponto de partida, um POST e 
+um GET, não é necessário fazer os demais endpoints.
+
+As classes para representar o veiculo já existem.
+
+Poderá ser feito um armazenamento de dados em memória ou com 
+um banco de dados que não precisar ser disponibilizado na entrega
+(por meio de docker-compose por exemplo).
+
+Deve ser feito pelo menos um teste unitário para qualquer camada.
 
 #### Observações:🌟
 
+
 ## Dicas 💡
+Fique a vontade para adicionar nugets para ajudar no desenvolvimento.
 
 # Front - End
 
