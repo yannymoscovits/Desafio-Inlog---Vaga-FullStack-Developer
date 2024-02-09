@@ -52,7 +52,7 @@ O design do projeto fica à escolha do desenvolvedor do teste. Use sua criativid
 
 ## Iniciando o Projeto 🚀
 - Certifique-se de ter o Node.js instalado em sua máquina.
-- Clone este repositório usando o comando git clone https://github.com/weareinlog/Desafio-Inlog---Vaga-Frontend-Developer.
+- Clone este repositório usando o comando git clone https://github.com/weareinlog/Desafio-Inlog---Vaga-FullStack-Developer.
 - Acesse a pasta do projeto usando o comando cd nome-da-pasta.
 - Instale as dependências do projeto usando o comando npm install.
 - Execute o projeto usando o comando npm start.
