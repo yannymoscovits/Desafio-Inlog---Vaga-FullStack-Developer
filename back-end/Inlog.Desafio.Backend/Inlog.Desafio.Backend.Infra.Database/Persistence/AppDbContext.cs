@@ -27,5 +27,10 @@ public class AppDbContext : DbContext
         veiculo.Property(x => x.TipoVeiculo)
                .HasConversion<int>()
                .IsRequired();
+        veiculo.Property(x => x.Identifier).IsRequired().HasMaxLength(100);
+        veiculo.Property(x => x.LicensePlate).IsRequired().HasMaxLength(10);
+        veiculo.Property(x => x.TrackerSerialNumber).IsRequired().HasMaxLength(50);
+        veiculo.Property(x => x.Latitude).IsRequired();
+        veiculo.Property(x => x.Longitude).IsRequired();
     }
 }
