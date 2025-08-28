@@ -1,4 +1,6 @@
-﻿namespace Inlog.Desafio.Backend.Domain.Models;
+﻿using Inlog.Desafio.Backend.Domain.Entities;
+
+namespace Inlog.Desafio.Backend.Domain.Entities;
 
 public class Veiculo
 {
