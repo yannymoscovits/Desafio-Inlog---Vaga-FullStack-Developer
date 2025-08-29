@@ -1,0 +1,196 @@
+.page {
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  margin-left: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  background: #111827;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover { opacity: .92; }
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  overflow: hidden;
+}
+.cardHeader {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3f4f6;
+  background: #fafafa;
+  font-weight: 600;
+}
+.cardBody {
+  padding: 12px 12px 16px;
+}
+
+.tableWrap { overflow: auto; border-top: 1px solid #f3f4f6; }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+.table th, .table td {
+  padding: 12px 14px;
+  text-align: left;
+}
+.table thead th {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6b7280;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky; top: 0; z-index: 1;
+}
+.table tbody tr { border-bottom: 1px solid #f3f4f6; }
+.table tbody tr:hover { background: #f9fafb; }
+
+.kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
+  background: #eef2ff; color: #3730a3; border: 1px solid #e0e7ff;
+}
+.chip.gray { background:#f3f4f6; color:#374151; border-color:#e5e7eb; }
+.chip.green { background:#ecfdf5; color:#065f46; border-color:#d1fae5; }
+.dist { font-variant-numeric: tabular-nums; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 980px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+
+.note { color:#6b7280; font-size: 12px; }
+
+.formGrid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 16px 20px;
+  width: 100%;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0; 
+}
+
+.formControl label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.formControl input,
+.formControl select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.formControl input::placeholder {
+  color: #9aa3af;
+}
+
+.formControl input:focus,
+.formControl select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.error {
+  color: #dc2626;
+  font-size: 12px;
+  min-height: 14px;
+}
+
+.formActions {
+  grid-column: 1 / -1;       
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.cardBody {
+  padding: 16px;
+}
+
+@media (max-width: 1100px) {
+  .formGrid2 { grid-template-columns: 1fr; }
+}
+
+.rowClickable { cursor: pointer; }
+.rowClickable:hover { background: #f6f8fb; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pageInfo {
+  margin-right: auto;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.pageNumber {
+  font-size: 13px;
+  color: #374151;
+  min-width: 56px;
+  text-align: center;
+}
+
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

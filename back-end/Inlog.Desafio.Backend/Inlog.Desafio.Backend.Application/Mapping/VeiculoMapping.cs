@@ -17,7 +17,6 @@ public static class VeiculoMapping
             Latitude = dto.Latitude,
             Longitude = dto.Longitude
         };
-
     public static VeiculoResponse ToResponse(this Veiculo e) =>
         new()
         {

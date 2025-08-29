@@ -1,5 +1,4 @@
 ﻿namespace Inlog.Desafio.Backend.Domain.Entities;
-
 public class Veiculo
 {
     public string Chassi { get; set; } = string.Empty;                 
