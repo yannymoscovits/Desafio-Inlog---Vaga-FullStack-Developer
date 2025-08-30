@@ -16,13 +16,14 @@
   font-weight: 700;
   letter-spacing: .2px;
   margin-left: 20px;
+  color: #0038A8;
 }
 
 .btn {
   display: inline-flex;
   gap: 8px;
   align-items: center;
-  background: #111827;
+  background: #0038A8;
   color: #fff;
   border: 0;
   border-radius: 10px;
