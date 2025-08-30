@@ -45,10 +45,9 @@ Estrutura do Repositório
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/yannymoscovits/desafio-fullstack-inlog.git
+git clone https://github.com/yannymoscovits/Desafio-Inlog---Vaga-FullStack-Developer
 cd desafio-fullstack-inlog
 ```
-
 ### 2. Rodar o Back-end (API .NET 6)
 ```bash
 cd back-end
