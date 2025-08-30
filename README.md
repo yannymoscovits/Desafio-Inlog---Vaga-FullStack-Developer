@@ -1,110 +1,164 @@
-# Desafio Inlog - Vaga FullStack Developer 🚀
 
-Objetivo Geral:
+# Desafio FullStack Developer — Inlog
 
-O objetivo deste desafio é avaliar e demonstrar suas habilidades no desenvolvimento de back-end, seguido pela integração e desenvolvimento do front-end, utilizando as APIs que você criou na primeira etapa.
+Este repositório contém a implementação completa do desafio **FullStack Developer** dividido em duas partes: **Back-end (.NET 6 API)** e **Front-end (React + TypeScript)**.
 
-# Back - End
+Tecnologias Utilizadas
 
-## Introdução 📜
-O objetivo é completar a aplicação WebApi presente na pasta back-end.
+- **Back-end**
+  - [.NET 6](https://dotnet.microsoft.com/) — Criação da API.
+  - **Entity Framework Core** — ORM para persistência de dados.
+  - **xUnit** — Testes unitários.
+  - **Clean Architecture** — Separação de responsabilidades em camadas.
 
-## Instruções 📝
-A solução esta em dotnet 6.0 e pode ser utilizado a IDE de sua preferência mas
-deve ser feito como o dotnet 6.0 ou superior.
-
-Dentro da Solução tem algumas sugestões de estrutura de projeto, para
-que possa colocar as classes e interfaces necessárias.
-
-## Iniciando o Projeto 🚀
-Dentro da pasta Controllers tem uma controller de veículos 
-com dois métdos para servir de ponto de partida, um POST e 
-um GET, não é necessário fazer os demais endpoints.
-
-As classes para representar o veiculo já existem.
-
-Poderá ser feito um armazenamento de dados em memória ou com 
-um banco de dados que não precisar ser disponibilizado na entrega
-(por meio de docker-compose por exemplo).
-
-Deve ser feito pelo menos um teste unitário para qualquer camada.
-
-#### Observações:🌟
-
-
-## Dicas 💡
-Fique a vontade para adicionar nugets para ajudar no desenvolvimento.
-
-# Front - End
-
-## Introdução 📜
-O objetivo deste desafio é criar um projeto React que contenha duas páginas: uma para listar veículos e outra para cadastrar novos veículos. 
-
-Na página de listagem de veículos, será necessário utilizar a biblioteca do mapa, como o Leaflet ou Google Maps API, para exibir um mapa com a localização de cada veículo da lista.
-
-Além disso, a lista de veículos deve estar ordenada pela localização mais próxima do usuário. Na página de cadastro de veículos, será necessário criar um formulário para inserir as informações básicas e a localização do veículo. 
-
-O design do projeto fica à escolha do desenvolvedor do teste. Use sua criatividade e mostre suas habilidades em React, API e testes automatizados neste desafio!
-
-## Instruções 📝
-1. Crie 2 páginas em React: Uma para listagem de veículos e outra página de cadastro de veículos. 🚗📝
-
-2. Na página de listagem de veículos, utilize a biblioteca do mapa, como o Leaflet ou Google Maps API para exibir um mapa e colocar um pin em cada localização de veículos na lista. 🗺️
-    - A tela de listagem deve conter uma lista de veículos deve estar ordenada pela localização mais próxima do usuário (web).
-    - Além da listagem, deve conter um mapa com as informações solicitadas.
-
-3. Na página de cadastro de veículos, crie um formulário que permita ao usuário inserir as informações básicas e a localização do veículo.
-   - Exemplo:
-```json
-{
-    identifier: 'Vehicle 1',
-    license_plate: 'AAA-9A99',
-    tracker_serial_number: 'A0000000',
-    coordinates: {
-        latitude: -25.43247,
-        longitude: -49.27845
-    } 
-}
-```
-
-4. Crie teste usando o Jest, React Testing Library ou Cypress para garantir que:
-   - A listagem de veículos seja renderizada corretamente com o mapa. 🧭
-   - O formulário de cadastro de veículos esteja funcionando perfeitamente. ✅
-   - A Fake API esteja respondendo corretamente. 📡
-
-## Iniciando o Projeto 🚀
-- Certifique-se de ter o Node.js instalado em sua máquina.
-- Clone este repositório usando o comando git clone https://github.com/weareinlog/Desafio-Inlog---Vaga-FullStack-Developer.
-- Acesse a pasta do projeto usando o comando cd nome-da-pasta.
-- Instale as dependências do projeto usando o comando npm install.
-- Execute o projeto usando o comando npm start.
-- Acesse o projeto em seu navegador através da url http://localhost:3000.
-
-#### Observações:🌟
-- Você pode utilizar bibliotecas externas para ajudar no desenvolvimento do projeto, tais como:
-    - Validadores: react-hook-form, yup, formik entre outros.
-    - Componentes: Material-UI, Chakra-ui entre outros.
-    - Rotas: React-router-dom.
-
-- Caso deseje adicionar mais campos para o veículo como uma imagem entre outros, fique à vontade. Isso será visto como bônus. 🏎️💻
-
-
-## Dicas 💡
-
-- Use componentes funcionais com hooks do React.
-- Utilize TypeScript ou PropTypes para tipagem.
-- Utilize Redux ou outro gerenciador de estado para armazenar as informações dos veículos.
-- Utilize o Axios para fazer requisições à API.
-- Utilize a biblioteca React Leaflet ou Google Maps API para exibir o mapa.
-- Teste todos os componentes criados.
-- Se quiser adicionar algum bônus, como uma busca de veículos ou um filtro de veículos, fique à vontade.
-- Este projeto foi criado utilizando o padrão create-react-app, que oferece uma estrutura básica para a construção de aplicativos React. Você é livre para alterar a arquitetura do projeto conforme achar melhor, adicionando ou removendo bibliotecas e componentes, criando novas pastas e arquivos, e assim por diante. Sinta-se à vontade para personalizar o projeto de acordo com as suas necessidades e preferências.
+- **Front-end**
+  - [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) — Construção da interface.
+  - **React Router** — Navegação entre páginas.
+  - **Axios** — Consumo da API de veículos.
+  - **React Leaflet** — Exibição de mapa interativo.
+  - **Jest + React Testing Library** — Testes unitários e de integração.
 
 ---
 
-## Como entregar 📨
+Estrutura do Repositório
 
-- Crie um fork deste repositório e desenvolva nele.
-- Após finalizar, enviar para o email beinlog@inlog.com.br o link do repositorio do github com seu projeto, além de seus dados de contato.
+```
+/
+├── back-end/                         # API em .NET 6
+│   ├── Inlog.Desafio.Backend.WebApi/ # Endpoints da aplicação
+│   ├── Inlog.Desafio.Backend.Application/ # Serviços e DTOs
+│   ├── Inlog.Desafio.Backend.Domain/ # Entidades e contratos
+│   ├── Inlog.Desafio.Backend.Infra/  # Repositórios e persistência
+│   └── tests/                        # Testes unitários (xUnit)
+│
+├── front-end/                        # Aplicação em React + TS
+│   ├── src/components/               # Componentes reutilizáveis
+│   ├── src/pages/                    # Páginas principais (VehiclesList, VehicleCreate, etc.)
+│   ├── src/api/                      # Configuração do Axios
+│   ├── src/hooks/                    # Hooks customizados
+│   ├── src/styles/                   # Estilos globais e CSS
+│   └── src/__tests__/                # Testes unitários e integração
+```
+---
 
-## Boa sorte!
+## Como rodar o projeto
+
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/yannymoscovits/desafio-fullstack-inlog.git
+cd desafio-fullstack-inlog
+```
+
+### 2. Rodar o Back-end (API .NET 6)
+```bash
+cd back-end
+dotnet restore
+dotnet build
+dotnet run --project Inlog.Desafio.Backend.WebApi
+```
+- A API sobe em: `https://localhost:5001`  
+- Endpoints disponíveis:
+  - `GET /api/veiculos`
+  - `POST /api/veiculos`
+
+### 3. Rodar o Front-end (React + TypeScript)
+```bash
+cd front-end
+npm install
+npm start
+```
+- Aplicação disponível em: `http://localhost:3000`
+---
+
+## Testes
+
+### Back-end
+```bash
+cd back-end
+dotnet test
+```
+
+### Front-end
+```bash
+cd front-end
+npm test
+```
+
+Os testes incluem:
+- **Back-end:** Validação de serviços e repositórios (xUnit).
+- **Front-end:** Testes de componentes (VehicleCreate, VehiclesList, etc.) com **Jest + Testing Library**.
+
+Resultados:
+API:
+<img width="1020" height="375" alt="image" src="https://github.com/user-attachments/assets/f75a95fd-9332-4e49-9585-cd03364f1e6c" />
+FRONT (REACT):
+<img width="558" height="234" alt="image" src="https://github.com/user-attachments/assets/945596c8-bf26-4746-95a3-1b9b58eaacbd" />
+
+## Funcionalidades Implementadas
+
+- **Back-end**
+  - API REST para cadastro e listagem de veículos.
+  - Estrutura em camadas (Clean Architecture).
+  - Testes unitários básicos.
+
+- **Front-end**
+  - Tela de listagem de veículos com **paginação** e **ordenação por proximidade** (usando geolocalização).
+  - Tela de criação de veículos.
+  - Integração com API via Axios.
+  - Exibição de mapa (mockado nos testes com React Leaflet).
+  - Testes unitários e de integração.
+
+---
+Lista de Veículos
+<img width="1910" height="860" alt="image" src="https://github.com/user-attachments/assets/060fba67-ed2a-450d-b492-3dbab933ef9b" />
+Cadastro de Veículos
+<img width="1904" height="886" alt="image" src="https://github.com/user-attachments/assets/c7e081c7-471c-4e5c-b5f5-230a67de2b23" />
+
+## Comentários da Autora
+
+Durante o desenvolvimento deste desafio, tomei algumas decisões técnicas que considero relevantes compartilhar:
+
+- **React com Hooks:**  
+  Optei por usar componentes funcionais com *hooks* (`useState`, `useEffect`, `useMemo`) em vez de classes. Essa escolha traz um código mais limpo e moderno, além de seguir as boas práticas recomendadas atualmente pela comunidade React.
+
+- **TypeScript no front e C# no back:**  
+  A tipagem forte foi essencial para evitar erros em tempo de execução e garantir segurança nas integrações entre camadas.  
+  No back-end, usei C# com .NET 6, explorando DTOs, serviços e repositórios para manter o código organizado. Tambem usei a v6.0 para simular alguns sistemas "legados" da possível vaga.
+  No front, o TypeScript ajudou a controlar os tipos vindos da API e dar mais confiança nos testes.
+
+- **Axios para consumo de API:**  
+  Usei o `axios` por ser uma biblioteca simples, robusta e amplamente usada. Uma dificuldade inicial foi integrar os testes com Jest, já que o axios trabalha com ESM e o Jest, por padrão, espera CJS. A solução foi ajustar *mocks* e `transformIgnorePatterns` para rodar    sem erros. Essa tarefa em especial foi a que me tomou mais tempo, mas que no final tive um resultado muito positivo.
+
+- **React Testing Library + Jest:**  
+  Testar foi um ponto desafiador: precisei simular chamadas assíncronas da API, geolocalização e componentes de mapa.  
+  O aprendizado aqui foi sobre como *mockar* dependências externas (`axios`, `react-router-dom`, componentes de mapa) e usar `waitFor`/`act` para lidar com *state updates*.  
+  No fim, consegui validar tanto a criação de veículos quanto a listagem com paginação.
+
+- **Mapas (Leaflet):**  
+  Optei por utilizar a biblioteca React Leaflet em vez da Google Maps API por alguns motivos práticos. O Leaflet é uma solução open source, leve e simples de configurar, que permite exibir mapas de forma eficiente sem a necessidade de criar contas, gerar chaves de API    ou configurar billing. Para o contexto deste desafio, essa praticidade foi fundamental, pois reduziu o tempo de setup e permitiu focar nos testes. Além disso, a documentação do React Leaflet é direta e objetiva, o que me ajudou pois nunca havia trabalhado com mapas.
+ 
+- **Interface sem uso de bibliotecas de UI (Material, Ant, etc.):**  :
+  Optei por não usar bibliotecas visuais prontas, pois o escopo da interface era simples e resolvi com HTML + CSS customizado. Isso me permitiu focar em áreas mais desafiadoras para mim, como Leaflet e testes unitários (FRONT), que considerei mais relevantes para este desafio.
+
+---
+
+### Dificuldades Encontradas
+- Adequar o Jest para rodar com módulos ESM como `axios`.  
+- Criar testes consistentes para hooks e chamadas assíncronas.  
+- Ajustar mocks de bibliotecas externas sem quebrar os testes.  
+- Organizar paginação e geolocalização ao mesmo tempo, garantindo que os veículos fossem exibidos corretamente na UI.
+
+---
+
+Esses pontos refletem meu aprendizado e justificam minhas escolhas. Busquei equilíbrio entre **boas práticas**, **clareza do código** e **entregáveis testáveis** dentro do prazo do desafio.
+
+## Possíveis Melhorias
+- Adicionar **Redux** ou outro state manager para estados globais.
+- Implementar **filtros e buscas** na listagem de veículos.
+- Mais testes de integração ponta a ponta (E2E).
+- Incluir JWT para autenticação BAERER e BCRYPT para incluir senhas criptografadas (API).
+---
+
+## Autor
+Desenvolvido por **Yanny Moscovits** 🚀  
+FullStack Developer | .NET + React
