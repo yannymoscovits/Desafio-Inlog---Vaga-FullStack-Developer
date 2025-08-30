@@ -1,26 +1,19 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom'
+import VehiclesList from './pages/VehiclesList'
+import VehicleCreate from './pages/VehicleCreate'
+import logo from './img/logo.png'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <nav style={{ padding: 12, borderBottom: '1px solid #eee', display: 'flex', gap: 12 }}>
+        <img src={logo} style={{ width: '250px' }} alt="Inlog Logo" />
+      </nav>
+      <Routes>
+        <Route path="/" element={<Navigate to="/veiculos" />} />
+        <Route path="/veiculos" element={<VehiclesList />} />
+        <Route path="/veiculos/novo" element={<VehicleCreate />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
-
-export default App;
